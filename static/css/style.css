@@ -8,15 +8,15 @@
   font-size: 62.5%;
 
   --hue: 194;
-  --bg-img: url('/static/img/bg-desktop.jpg');
+  --bg-img: url("/static/img/bg-desktop.jpg");
   --text-color: hsl(var(--hue), 40%, 98%);
   --logo-filter: invert(100%);
   --bt-color: white;
-  --bg-container: rgba(255, 255, 255, 0.1);  
+  --bg-container: rgba(255, 255, 255, 0.1);
 }
 
 html.light {
-  --bg-img: url('/static/img/bg-desktop-light.jpg');
+  --bg-img: url("/static/img/bg-desktop-light.jpg");
   --text-color: rgba(0, 0, 0, 0.247);
   --logo-filter: invert(50%);
   --bt-color: rgb(0, 0, 0);
@@ -117,7 +117,7 @@ body {
 }
 
 .button-container span {
-  font-family: 'goldana', sans-serif;
+  font-family: "goldana", sans-serif;
   font-size: 4rem;
   font-weight: 500;
   color: var(--bt-color);
@@ -125,7 +125,7 @@ body {
 }
 
 #botao-cliente {
-  border: 0.5rem solid #55AC7D;
+  border: 0.5rem solid #55ac7d;
   width: 30rem;
   height: 8rem;
   margin: auto;
@@ -136,21 +136,21 @@ body {
 }
 
 #botao-cliente:hover {
-  background-color: #55AC7D;
+  background-color: #55ac7d;
   border: 0.5rem solid #2e5842;
   color: #000000;
   transition: 1s;
 }
 
 #botao-empresa {
-  border: 0.5rem solid #8C2F12;
+  border: 0.5rem solid #8c2f12;
   width: 30rem;
   height: 8rem;
   margin: auto;
   border-radius: 2rem;
-  color: #8C2F12;
+  color: #8c2f12;
   font-weight: 550;
-  margin-bottom: 65px;
+  margin-bottom: 66px;
 }
 
 #botao-empresa:hover {
