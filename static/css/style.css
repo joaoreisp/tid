@@ -150,7 +150,11 @@ body {
   border-radius: 2rem;
   color: #8C2F12;
   font-weight: 550;
+<<<<<<< HEAD
   margin-bottom: 65px;
+=======
+  margin-bottom: 60px;
+>>>>>>> f28c230e665752337b2b508a3d2d75a906857da3
 }
 
 #botao-empresa:hover {

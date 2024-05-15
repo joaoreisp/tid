@@ -74,6 +74,51 @@
       </div>
     </div>
 
+  <script>
+    function mostrarSenha() {
+        var inputPass = document.getElementById("event-senha")
+        var btnShowPass = document.getElementById("btn-senha")
+
+        if (inputPass.type === "password") {
+          inputPass.setAttribute("type", "text")
+          btnShowPass.classList.replace("bi-eye-fill", "bi-eye-slash-fill")
+        } else {
+          inputPass.setAttribute("type", "password")
+          btnShowPass.classList.replace("bi-eye-slash-fill", "bi-eye-fill")
+        }
+      }
+  </script>
+  <script>
+      document
+        .getElementById("cancel-btn")
+        .addEventListener("click", function () {
+          window.location.href = "index.html"
+        })
+    </script>
+    <script>
+      let darkMode = true
+
+      const buttonToggle = document.getElementById("toggle-mode")
+      const isLightMode = localStorage.getItem("isLightMode") === "true"
+
+      if (isLightMode) {
+        document.documentElement.classList.add("light")
+      } else {
+        document.documentElement.classList.remove("light")
+      }
+
+      buttonToggle.addEventListener("click", (event) => {
+        document.documentElement.classList.toggle("light")
+        const isLightMode = document.documentElement.classList.contains("light")
+        localStorage.setItem("isLightMode", isLightMode.toString())
+
+        const mode = darkMode ? "light" : "dark"
+        event.currentTarget.querySelector(
+          "span"
+        ).textContent = `${mode} mode ativado`
+        darkMode = !darkMode
+      })
+    </script>
   <script src="enter.js"></script>
   </body>
 </html>
